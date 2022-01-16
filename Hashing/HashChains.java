@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
-public class HashChains {
-
+public class HashChains 
+{
     private FastScanner in;
     private PrintWriter out;
     // store all strings in one list
