@@ -6,8 +6,8 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-public class PhoneBook {
-
+public class PhoneBook 
+{
     private FastScanner in = new FastScanner();
     // Keep list of all existing (i.e. not deleted yet) contacts.
     private HashMap<Integer, String> phoneName = new HashMap<Integer, String>();
