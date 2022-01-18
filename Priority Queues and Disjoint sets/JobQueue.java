@@ -42,7 +42,8 @@ public class JobQueue
     {
         int id;
         long nextFreeTime;
-        public Worker (int id) {
+        public Worker (int id) 
+        {
             this.id = id;
             nextFreeTime = 0;
         }
