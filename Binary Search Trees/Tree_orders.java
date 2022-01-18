@@ -11,37 +11,37 @@ public class Tree_orders
 		BufferedReader in;
 
 		FastScanner() 
-        {
+        	{
 			in = new BufferedReader(new InputStreamReader(System.in));
 		}
 
 		String next() throws IOException 
-        {
+        	{
 			while (!tok.hasMoreElements())
 				tok = new StringTokenizer(in.readLine());
 			return tok.nextToken();
 		}
 	
 		int nextInt() throws IOException 
-        {
+        	{
 			return Integer.parseInt(next());
 		}
 	}
 
 	public class TreeOrders 
-    {
+    	{
 		int n;
 		int[] key, left, right;
 		
 		void read() throws IOException 
-        {
+        	{
 			FastScanner in = new FastScanner();
 			n = in.nextInt();
 			key = new int[n];
 			left = new int[n];
 			right = new int[n];
 			for (int i = 0; i < n; i++) 
-            { 
+            		{ 
 				key[i] = in.nextInt();
 				left[i] = in.nextInt();
 				right[i] = in.nextInt();
@@ -104,35 +104,30 @@ public class Tree_orders
 	}
 
 	static public void main(String[] args) throws IOException 
-    {
+    	{
             new Thread(null, new Runnable() 
                        {
                     public void run() 
                     {
-                        try {
+                        try 
+			{
                             new Tree_orders().run();
                         } 
-                     catch (IOException e) 
+                     	catch (IOException e) 
                         {}
                     }
                 }, "1", 1 << 26).start();
 	}
 
-	public void print(List<Integer> x) {
-		for (Integer a : x) {
-			System.out.print(a + " ");
-		}
-		System.out.println();
-	}
-
-	public void run() throws IOException {
+	public void run() throws IOException
+	{
 		TreeOrders tree = new TreeOrders();
 		tree.read();
 		tree.inOrder();
-     	System.out.println();
+     		System.out.println();
 		tree.preOrder();
-     	System.out.println();
+     		System.out.println();
 		tree.postOrder();
-     	System.out.println();
+     		System.out.println();
 	}
 }
