@@ -3,6 +3,13 @@ package binarySearchTrees;
 import java.util.*;
 import java.io.*;
 
+/*
+    This version does not finish in the 
+    required time and uses more memory 
+    since it uses combinations of partial 
+    result lists to store the data.
+**/
+
 public class TreeOrdersSlowVersion 
 {
     class FastScanner 
